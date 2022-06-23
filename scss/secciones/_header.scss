@@ -1,0 +1,80 @@
+.header {
+    grid-area: header;
+    background-image: linear-gradient(to bottom, rgba(201, 128, 98, 0.89), rgba(83, 56, 48, 0.658));
+  
+    h1 {
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  
+      a {
+        grid-area: titulo;
+        color: rgb(252, 250, 248);
+        font-size: 100px;
+        text-decoration: none;
+        padding: 20px;
+        margin: 50px;
+  
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+  
+  .navBar {
+    grid-area: navBar;
+  
+    ul {
+      display: flex;
+      flex-direction: row;
+      background-color: black;
+      list-style-type: none;
+      text-align: center;
+      justify-content: space-around;
+  
+      li {
+        list-style-type: none;
+        align-content: center;
+        width: 100%;
+  
+        a {
+          color: rgb(252, 250, 248);
+          font-size: 25px;
+          position: sticky;
+          text-decoration: none;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+  
+    li {
+      width: 100%;
+  
+      &:hover {
+        background-color: rgb(252, 250, 248);
+      }
+    }
+  
+    ul li a:hover {
+      color: black;
+      font-weight: bold;
+    }
+  }
+/* RESPONSIVE DESIGN - MEDIA QUERY - MOBILE LAST */
+/* TABLET */
+@media (max-width: 768px){
+    .navBar {
+        grid-area: navBar;
+      
+        ul {
+          display: flex;
+          flex-direction: column;
+          background-color: black;
+          list-style-type: none;
+          text-align: center;
+          justify-content: space-around;
+        }    
+    }
+  }

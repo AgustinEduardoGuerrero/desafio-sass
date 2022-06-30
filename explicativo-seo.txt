@@ -1,214 +1,26 @@
-﻿------------------------------------------------HEADER-------------------------------------------------------------
-.header {
-  grid-area: header;
-  background-image: linear-gradient(to bottom, rgba(201, 128, 98, 0.89), rgba(83, 56, 48, 0.658));
+﻿ En el archivo index.html sumé el SEO con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: “tienda de vinos especializada, con servicios de degustación y visitas a bodegas"
+Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán la página “inicio” de mi sitio: "VINOS, MALBEC, CABERNET FRANC, VINOS DESTACADOS"
+Encabezado: para el encabezado utilicé el texto “VINOS - INICIO”
 
-  h1 {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+ En el archivo equipo.html sumé el SEO con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: “tienda de vinos especializada, un viaje de experiencias"
+Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán la página “inicio” de mi sitio: "VINOS, SOMMELIERS, MALBEC, CABERNET"
+Encabezado: para el encabezado utilicé el texto “VINOS - NUESTRO EQUIPO”
 
-    a {
-      grid-area: titulo;
-      color: rgb(252, 250, 248);
-      font-size: 100px;
-      text-decoration: none;
-      padding: 20px;
-      margin: 50px;
-
-      &:hover {
-        color: black;
-      }
-    }
-  }
-}
-
-.navBar {
-  grid-area: navBar;
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    list-style-type: none;
-    text-align: center;
-    justify-content: space-around;
-
-    li {
-      list-style-type: none;
-      align-content: center;
-      width: 100%;
-
-      a {
-        color: rgb(252, 250, 248);
-        font-size: 25px;
-        position: sticky;
-        text-decoration: none;
-        text-align: center;
-        width: 100%;
-      }
-    }
-  }
-
-  li {
-    width: 100%;
-
-    &:hover {
-      background-color: rgb(252, 250, 248);
-    }
-  }
-
-  ul li a:hover {
-    color: black;
-    font-weight: bold;
-  }
-}
---------------------------------FOOTER-----------------------------------------
-
-.logoFooter {
-  grid-area: logoFooter;
-  width: 150px;
-  padding: 3px;
-  background-image: cover;
-}
-
-.newsletter {
-  label {
-    grid-area: textoNewsletter;
-    display: flex;
-    flex-direction: column;
-    color: antiquewhite;
-    font-weight: bold;
-    margin: 1rem;
-    padding: 20px 20px 1px 20px;
-    align-items: center;
-  }
-
-  input {
-    grid-area: newsletter;
-    display: flex;
-    border-width: 2px;
-    border-radius: 25px;
-    background-color: bisque;
-    text-align: center;
-    font-size: 100%;
-    font-weight: bold;
-    height: 40px;
-    width: 400px;
-  }
-}
-
-.redes {
-  grid-area: redes;
-  display: flex;
-  align-items: center;
-  font-size: 40px;
-  padding: 20px;
-  justify-content: flex-end;
-  text-decoration: none;
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  li {
-    display: flex;
-    justify-content: space-around;
-
-    a {
-      display: flex;
-      text-decoration: none;
-      color: rgb(252, 250, 248);
-      padding: 1rem;
-
-      &:hover {
-        color: black;
-      }
-    }
-  }
-}
-
--------------------------------------MAIN INDEX--------------------------------------------
-.seccion1 {
-  grid-area: seccion1;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-
-  h2 {
-    padding: 15px;
-  }
-}
-
-.imgBanner {
-  width: 100%;
-}
-
-.bannerIndex {
-  grid-area: bannerIndex;
-  display: flex;
-  width: 100%;
-}
-
-.imgIndex {
-  width: 100%;
-}
-
-.destacados {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(179, 122, 100);
-  align-items: center;
-  border-radius: 5px;
-
-  h2 {
-    display: block;
-    padding: 40px;
-    border: 2px;
-    text-align: center;
-    border: 1px;
-    border-color: beige;
-
-    tituloDestacados {
-      border-color: beige;
-    }
-  }
-}
-
-.destacadosSeleccion {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 80%;
-  padding: 10px;
-}
-
-.producto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 0,5rem;
-
-  &:hover {
-    transform: scale(1.1, 1.1);
-    transition-duration: 1s;
-  }
-}
-
-.textoProducto {
-  color: antiquewhite;
-  font-weight: bold;
-  top: 10px;
-  padding: 1rem;
-  margin: 1rem;
-  left: 140px;
-  border: solid 2px;
-  overflow: hidden;
-  width: 100px;
-  height: 100px;
-}
+ En el archivo degustaciones.html sumé el SEO con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: “tienda de vinos especializada, con servicios de degustaciones"
+Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán la página “inicio” de mi sitio: "VINOS, DEGUSTACIONES, EXPERIENCIAS, BODEGAS"
+Encabezado: para el encabezado utilicé el texto “VINOS - DEGUSTACIONES”
 
 
+ En el archivo contacto.html sumé el SEO con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: “tienda de vinos especializada, con servicios de degustaciones"
+Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán la página “inicio” de mi sitio: "VINOS, CONTACTO, SOMMELIERS, BODEGAS"
+Encabezado: para el encabezado utilicé el texto “VINOS - CONTACTO”
+
+ En el archivo catalogo.html sumé el SEO con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: “tienda de vinos especializada, con servicios de degustaciones"
+Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán la página “inicio” de mi sitio: "VINOS, MALBEC, CABERNET FRANC, PINOT NOIR"
+Encabezado: para el encabezado utilicé el texto “VINOS - CATALOGO”
 

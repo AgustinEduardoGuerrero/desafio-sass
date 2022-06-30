@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Raleway:wght@200&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,23 @@
   margin: 1px;
   grid-gap: 1px;
   grid-template-areas: "header" "main" "footer"; }
+
+.destacadosSeleccion p {
+  color: antiquewhite;
+  top: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  left: 140px;
+  border: solid 2px;
+  overflow: hidden;
+  width: 100px;
+  height: 100px; }
+
+.destacados h2 {
+  font-family: 'Nunito', sans-serif;
+  color: beige;
+  padding: 40px;
+  text-align: center; }
 
 .presentacion {
   display: grid;
@@ -25,7 +43,13 @@
   flex-direction: column;
   padding: 20px; }
   .seccion1 h2 {
-    padding: 15px; }
+    padding: 15px;
+    background-color: rgba(228, 133, 89, 0.877);
+    color: antiquewhite; }
+  .seccion1 p {
+    padding: 15px;
+    background-color: rgba(240, 205, 190, 0.877);
+    color: #36332f; }
 
 .imgBanner {
   width: 100%; }
@@ -41,18 +65,13 @@
 .destacados {
   display: flex;
   flex-direction: column;
-  background-color: #b37a64;
+  background-color: rgba(204, 96, 33, 0.664);
   align-items: center;
   border-radius: 5px; }
-  .destacados h2 {
-    display: block;
-    padding: 40px;
-    border: 2px;
-    text-align: center;
-    border: 1px;
-    border-color: beige; }
-    .destacados h2 tituloDestacados {
-      border-color: beige; }
+  .destacados .tituloDestacados {
+    border-color: beige;
+    font-weight: bold;
+    font-size: 60px; }
 
 .destacadosSeleccion {
   display: flex;
@@ -68,19 +87,8 @@
   padding-bottom: 0,5rem; }
   .producto:hover {
     transform: scale(1.1, 1.1);
-    transition-duration: 1s; }
-
-.textoProducto {
-  color: antiquewhite;
-  font-weight: bold;
-  top: 10px;
-  padding: 1rem;
-  margin: 1rem;
-  left: 140px;
-  border: solid 2px;
-  overflow: hidden;
-  width: 100px;
-  height: 100px; }
+    transition-duration: 1s;
+    background-color: rgba(221, 108, 42, 0.664); }
 
 /* RESPONSIVE DESIGN - MEDIA QUERY - MOBILE LAST */
 /* TABLET */
@@ -101,6 +109,215 @@
     grid-template-columns: 2;
     grid-template-rows: 2;
     grid-template-areas: "producto producto" "producto producto"; } }
+
+.main-content-nuestro-equipo h2 {
+  background-color: #f0b8a2;
+  padding: 50px;
+  text-align: center; }
+
+.main-content-nuestro-equipo p {
+  padding: 50px;
+  background-color: #e69170; }
+
+/* RESPONSIVE DESIGN - MEDIA QUERY - MOBILE LAST */
+/* TABLET */
+@media (max-width: 768px) {
+  .main-content-nuestro-equipo {
+    width: 100%; } }
+
+.catalogo {
+  display: flex;
+  flex-direction: column;
+  background-color: #ca9884;
+  align-items: center;
+  border-radius: 5px; }
+
+.tituloCatalogo {
+  display: block;
+  padding: 40px;
+  border: 2px;
+  text-align: center;
+  border: 1px;
+  border-color: beige; }
+  .tituloCatalogo h2 {
+    border-color: beige; }
+
+.todosLosProductos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  padding: 10px; }
+
+.producto {
+  grid-area: producto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0,5rem; }
+
+.textoProducto {
+  color: antiquewhite;
+  font-weight: bold;
+  top: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  left: 140px;
+  border: solid 2px;
+  overflow: hidden;
+  width: 100px;
+  height: 100px; }
+
+.main-content-catalogo h2 {
+  background-color: #f0b8a2;
+  padding: 50px;
+  text-align: center; }
+
+.main-content-catalogo p {
+  padding: 50px;
+  background-color: #e69170; }
+
+/* RESPONSIVE DESIGN - MEDIA QUERY - MOBILE LAST */
+/* TABLET */
+@media (max-width: 768px) {
+  .main-content-catalogo {
+    width: 100%; } }
+
+/* RESPONSIVE DESIGN - MEDIA QUERY - MOBILE LAST */
+/* MOBILE */
+@media (max-width: 480px) {
+  .producto {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    grid-template-areas: "producto producto" "producto producto"; } }
+
+.degustaciones {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  background-color: #f0b8a2;
+  padding: 2px;
+  grid-template-areas: "imgDegustacion contenidoDegustacion" "imgDegustacion formularioDegustaciones"; }
+
+.imgDegustacion {
+  grid-area: imgDegustacion;
+  display: flex;
+  flex-direction: column;
+  width: 35vw; }
+
+.contenidoDegustacion {
+  grid-area: contenidoDegustacion;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0px 10px 0px 10px; }
+
+.formularioDegustaciones {
+  grid-area: formularioDegustaciones;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: stretch;
+  padding: 0px 10px 0px 10px; }
+  .formularioDegustaciones label {
+    display: block;
+    color: antiquewhite;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    padding: 5px; }
+  .formularioDegustaciones input {
+    border-width: 1px;
+    border-radius: 20px;
+    background-color: bisque;
+    text-align: center;
+    font-size: 100%;
+    height: 40px;
+    width: 100%;
+    margin: 1rem; }
+
+/* RESPONSIVE DESIGN - MEDIA QUERY - MOBILE LAST */
+/* TABLET */
+@media (max-width: 768px) {
+  .degustaciones {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    background-color: #f0b8a2;
+    padding: 2px;
+    grid-template-areas: "imgDegustacion contenidoDegustacion" "formularioDegustaciones formularioDegustaciones"; }
+  .imgDegustacion {
+    width: 80vh; }
+  .cajaForm {
+    display: flex; } }
+
+/* RESPONSIVE DESIGN - MEDIA QUERY - MOBILE LAST */
+/* MOBILE */
+@media (max-width: 480px) {
+  .degustaciones {
+    display: grid;
+    grid-template-rows: 3;
+    grid-template-areas: "imgDegustacion" "contenidoDegustacion" "formularioDegustaciones"; }
+  .imgDegustacion {
+    width: 100vw;
+    padding-bottom: 10px; } }
+
+.formulario {
+  grid-area: formulario;
+  background-color: #f0b8a2;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 1;
+  grid-template-areas: "formulario"; }
+
+.cajaForm {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0px 15px 0px;
+  align-items: center; }
+
+.formulario label {
+  display: block;
+  color: antiquewhite;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  padding: 5px; }
+
+.formulario input {
+  border-width: 1px;
+  border-radius: 20px;
+  background-color: bisque;
+  text-align: center;
+  font-size: 100%;
+  height: 40px;
+  width: 100%;
+  margin: 1rem; }
+
+.formulario select {
+  border-width: 2px;
+  border-radius: 25px;
+  background-color: bisque;
+  text-align: center;
+  font-size: 100%;
+  height: 40px;
+  width: 400px; }
+
+.formulario label span {
+  display: inline-block;
+  color: antiquewhite;
+  font-size: 25px;
+  text-align: right;
+  font-weight: 400;
+  padding-bottom: 5px; }
+
+/* RESPONSIVE DESIGN - MEDIA QUERY - MOBILE LAST */
+/* TABLET */
+@media (max-width: 768px) {
+  .cajaForm {
+    display: flex; } }
 
 .header {
   grid-area: header;
